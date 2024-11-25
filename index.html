@@ -26,16 +26,8 @@
                 orderAmount, 
                 {
                     db_id: 1,
-                    email: clientEmail
-                },
-                {
-                    subscriptions: [
-                        {
-                            resource_id: 1,
-                            channel: "email",
-                            email: clientEmail
-                        }
-                    ]
+                    field_name: "user_id",
+                    field_value: 1
                 }
             );
         }
@@ -43,7 +35,7 @@
 </head>
 
 <body>
-    <button type="button" onclick="handleOrderSubmission()">Оформить заказ sub</button> 
+    <button type="button" onclick="handleOrderSubmission()">Оформить заказ custom without update</button> 
 </body>
 
 </html>
