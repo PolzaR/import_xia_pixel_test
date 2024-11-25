@@ -18,7 +18,7 @@
             // Пример данных для вызова метода
             const orderAmount = 10; // Сумма заказа
             const clientName = "Dima"; // Имя клиента (можно получить из формы)
-            const clientEmail = "novem3@example.com"; // Email клиента (можно получить из формы)
+            const clientEmail = "novem4@example.com"; // Email клиента (можно получить из формы)
 
             // Вызов метода ak_pixel_push
             ak_pixel_push(
@@ -27,9 +27,10 @@
                 {
                     db_id: 1,
                     field_name: "user_id",
-                    field_value: 1
+                    field_value: 2
                 },
                 {
+                    user_id: 2,
                     subscriptions: [
                         {
                             resource_id: 1,
@@ -44,7 +45,7 @@
 </head>
 
 <body>
-    <button type="button" onclick="handleOrderSubmission()">Оформить заказ custom + email sub</button> 
+    <button type="button" onclick="handleOrderSubmission()">Оформить заказ custom + data field + email sub</button> 
 </body>
 
 </html>
