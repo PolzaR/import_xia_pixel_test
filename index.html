@@ -17,7 +17,7 @@
         function handleOrderSubmission() {
             // Пример данных для вызова метода
             const orderAmount = 1490; // Сумма заказа
-            const clientName = "Иван Иванов"; // Имя клиента (можно получить из формы)
+            const clientName = "Петя"; // Имя клиента (можно получить из формы)
             const clientEmail = "ivan@example.com"; // Email клиента (можно получить из формы)
 
             // Вызов метода ak_pixel_push
@@ -30,7 +30,7 @@
                     "email": clientEmail
                 },
                 {
-                    "email": clientEmail
+                    "_fname": clientName
                 }
             );
         }
@@ -38,7 +38,7 @@
 </head>
 
 <body>
-    <button type="button" onclick="handleOrderSubmission()">Оформить заказ</button> 1
+    <button type="button" onclick="handleOrderSubmission()">Оформить заказ</button> 
 </body>
 
 </html>
